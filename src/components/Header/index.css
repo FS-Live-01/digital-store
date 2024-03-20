@@ -1,0 +1,92 @@
+:root{
+  --pink: #C92071;
+  --dark-gray: #474747;
+  --dark-gray-10: #47474710;
+  --dark-gray-3: #666666;
+}
+
+header{
+  padding: 34px 100px 30px 100px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  & .logo{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 44px;
+    letter-spacing: .5px;
+    color: var(--pink);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    & img{
+      display: block;
+      width: 33px;
+    }
+  }
+
+  & .pesquisa{
+    background-color: var(--dark-gray-10);
+    flex: 1;
+    border-radius: 8px;
+    position: relative;
+    & input{
+      height: 60px;
+      padding-left: 24px;
+      background-color: transparent;
+    }
+    & button{
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      background-color: transparent;
+      &:hover::after{
+        border-color: var(--pink);
+      }
+      &:hover::before{
+        background-color: var(--pink);
+      }
+      &::after{
+        content: "";
+        width: 18px;
+        height: 18px;
+        border: 1px solid var(--dark-gray-3);
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &::before{
+        content: "";
+        width: 1px;
+        height: 5px;
+        background-color: var(--dark-gray-3);
+        position: absolute;
+        top: calc(50% + 6px);
+        left: 62%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  
+  & nav{
+    width: 100%;
+    & ul{
+      display: flex;
+      gap: 32px;
+      & li a{
+        background-color: red;
+        line-height: 40px;
+        display: block;
+      }
+    }
+
+  }
+}
