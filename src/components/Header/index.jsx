@@ -32,7 +32,7 @@ const Header = () => {
         <div className="carrinho" onClick={() => setVisibleCart(!visibleCart)}>
           <span>0</span>
           <img src={cart} alt="Icone carrinho" />
-          <div className={`modal ${visibleCart ? 'active': ''}`}>
+          <div className={`modal ${visibleCart && 'active'}`}>
             <h4>Meu carrinho</h4>
             <ul>
               <li>
