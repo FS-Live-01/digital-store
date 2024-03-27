@@ -3,7 +3,7 @@ import Paths from "./routes";
 import { LoginContext } from "./contexts/LoginContext";
 
 const App = () => {
-  const [estaLogado, setEstaLogado] = useState(true);
+  const [estaLogado, setEstaLogado] = useState(false);
   const [produtos, setProdutos] = useState([]);
   
   return (
