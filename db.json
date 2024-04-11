@@ -1,0 +1,135 @@
+{
+  "marcas": [
+    {
+      "id":1,
+      "nome": "Adidas"
+    },
+    {
+      "id":2,
+      "nome": "Balenciaga"
+    },
+    {
+      "id":3,
+      "nome": "Nike"
+    },
+    {
+      "id":4,
+      "nome": "Puma"
+    },
+    {
+      "id":5,
+      "nome": "Umbro"
+    }
+  ],
+  "categorias": [
+    {
+      "id":1,
+      "nome": "Esporte e lazer"
+    },
+    {
+      "id":2,
+      "nome": "Casual"
+    },
+    {
+      "id":3,
+      "nome": "Utilitário"
+    },
+    {
+      "id":4,
+      "nome": "Corrida"
+    },
+    {
+      "id":5,
+      "nome": "Dança"
+    }
+  ],
+  "generos": [
+    {
+      "id": 1,
+      "nome": "Masculino"
+    },
+    {
+      "id": 2,
+      "nome": "Feminino"
+    },
+    {
+      "id": 3,
+      "nome": "Unisex"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Tênis kichute",
+      "descricao": "lorem impsum dolor",
+      "preco": 219.9,
+      "imagem": "https://imgnike-a.akamaihd.net/768x768/0175015A.jpg",
+      "categoria": {
+        "id": 1,
+        "nome": "Casual"
+      },
+      "marca":{
+        "id": 1,
+        "nome": "Nike"
+      },
+      "genero": "Masculino",
+      "estado": "Novo",
+      "ref": "38416711",
+      "avaliacoes": {
+        "media": 4.7,
+        "total": 90
+      },
+      "tamanhos": [39,40,41,42,43],
+      "cores": ["red", "green", "blue", "black", "white"],
+      "desconto": 20
+    },
+    {
+      "id": 2,
+      "nome": "Tênis puma",
+      "descricao": "lorem impsum dolor",
+      "preco": 359.9,
+      "imagem": "https://imgnike-a.akamaihd.net/250x250/016510IN.jpg",
+      "categoria": {
+        "id": 1,
+        "nome": "Esporte e lazer"
+      },
+      "marca":{
+        "id": 1,
+        "nome": "Puma"
+      },
+      "genero": "Masculino",
+      "estado": "Usado",
+      "ref": "38416711",
+      "avaliacoes": {
+        "media": 4.7,
+        "total": 90
+      },
+      "tamanhos": [39,40,41,42,43],
+      "cores": ["red", "green", "blue", "black", "white"]
+    },
+    {
+      "id": 3,
+      "nome": "Tênis Balenciaga",
+      "descricao": "lorem impsum dolor",
+      "preco": 259.9,
+      "imagem": "https://imgnike-a.akamaihd.net/250x250/0127791E.jpg",
+      "categoria": {
+        "id": 1,
+        "nome": "Corrida"
+      },
+      "marca":{
+        "id": 1,
+        "nome": "Balenciaga"
+      },
+      "genero": "Feminino",
+      "estado": "Novo",
+      "ref": "38416711",
+      "avaliacoes": {
+        "media": 4.7,
+        "total": 90
+      },
+      "tamanhos": [39,40,41,42,43],
+      "cores": ["red", "green", "blue", "black", "white"]
+    }
+  ]
+}
